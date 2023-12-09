@@ -1,6 +1,8 @@
 `use client`;
 import CatalogCard from "@/components/Catalog/CatalogCard";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import SectionMap from "@/components/SectionMap/SectionMap";
+import SectionWork from "@/components/SectionWork/SectionWork";
 const str_title_weightLoss =
   "Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.";
 const str_title_weightGain =
@@ -10,15 +12,15 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="flex gap-12 py-12 pr-12">
+      <div className="flex gap-12 py-12 px-24">
         <CatalogCard
           title="похудение"
           path="/cat_back.png"
           alt="cat"
           text={str_title_weightLoss}
           catalog="slim"
-        heigth={106}
-        width={100}
+          heigth={100}
+          width={100}
         />
         <CatalogCard
           title="набор массы"
@@ -30,6 +32,8 @@ export default function Home() {
           width={130}
         />
       </div>
+      <SectionWork/>
+      <SectionMap/>
     </>
   );
 }

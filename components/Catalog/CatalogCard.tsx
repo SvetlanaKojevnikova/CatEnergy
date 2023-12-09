@@ -26,7 +26,7 @@ export default function CatalogCard({
         <h1 className="m-auto uppercase">{title}</h1>
       </div>
       <div className="py-8">{text}</div>
-      <button className="uppercase py-1 text-xl">каталог {catalog}</button>
+      <button className="uppercase py-1 text-xl cursor-pointer hover:bg-neutral-200">каталог {catalog}</button>
     </div>
   );
 }

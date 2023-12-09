@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="flex justify-between px-12 py-40 mt-96 bg-neutral-100">
+    <div className="flex justify-between px-12 py-14 bg-neutral-100">
       <div className="uppercase text-2xl">
         <span className="font-bold">cat</span> energy
       </div>
